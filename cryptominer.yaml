@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   labels:
     app: xmrig
-  name: xmrig
+  name: cryptominer
   namespace: default 
 spec:
   replicas: 3
@@ -44,4 +44,4 @@ spec:
       volumes:
       - name: config-volume
         configMap:
-          name: xmrig-config
+          name: cryptominer-config
