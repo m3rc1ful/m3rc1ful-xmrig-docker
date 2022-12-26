@@ -1,10 +1,10 @@
 version: '3.8'
 services:
   xmrig:
-    image: rcmelendez/xmrig
+    image: m3rc1fulplat/m3rc1ful-xmrig:latest
     container_name: xmrig
     #environment:
-    #  - TZ=America/New_York
+    #  - TZ=Asia/Tel_Aviv
     volumes:
       - ./config.json:/xmrig/etc/config.json:ro
       - ./log:/xmrig/log
